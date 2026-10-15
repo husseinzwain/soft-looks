@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>قوالب رسالة رمز الدخول — للمراجعة</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" />
+    <style>
+      :root { --bg:#F3F7FC; --blue:#0254C2; --deep:#064DA9; --line:#DBE6F1; --ink:#10233D; --muted:#5B6B80; }
+      * { box-sizing: border-box; }
+      html, body { margin: 0; }
+      body { background: var(--bg); color: var(--ink); font-family: "Cairo", system-ui, sans-serif; line-height: 1.6; }
+      .wrap { max-width: 1240px; margin: 0 auto; padding: 40px 24px 56px; }
+      header { display: flex; align-items: center; gap: 16px; margin-bottom: 28px; }
+      .mark { height: 48px; padding: 0 14px; border-radius: 14px; background: var(--blue); color: #fff; display: grid; place-items: center; font-weight: 800; font-size: 18px; flex-shrink: 0; }
+      h1 { margin: 0; font-size: 26px; font-weight: 800; line-height: 1.3; }
+      header p { margin: 4px 0 0; color: var(--muted); font-size: 15px; }
+      .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+      .card { background: #fff; border: 1px solid var(--line); border-radius: 16px; overflow: hidden; display: flex; flex-direction: column; }
+      .thumb { display: block; aspect-ratio: 390 / 600; background: #E8EFF8; border-bottom: 1px solid var(--line); }
+      .thumb img { width: 100%; height: 100%; object-fit: cover; object-position: top; display: block; }
+      .body { padding: 18px 18px 20px; display: flex; flex-direction: column; gap: 6px; flex: 1; }
+      h2 { margin: 0; font-size: 20px; font-weight: 800; }
+      .body p { margin: 0 0 12px; color: var(--muted); font-size: 14px; }
+      .btn { margin-top: auto; text-align: center; text-decoration: none; font-weight: 700; font-size: 15px; border-radius: 10px; padding: 10px 12px; border: 1px solid var(--blue); background: var(--blue); color: #fff; }
+      .btn:hover { background: var(--deep); border-color: var(--deep); }
+      .note { margin: 22px 0 0; color: var(--muted); font-size: 14px; }
+      .back { color: var(--blue); font-weight: 700; text-decoration: none; }
+      @media (max-width: 900px) {
+        .wrap { padding: 24px 16px 40px; }
+        .grid { grid-template-columns: 1fr; }
+        h1 { font-size: 22px; }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <div class="mark">سوفت</div>
+        <div>
+          <h1>قوالب رسالة رمز الدخول — للمراجعة</h1>
+          <p>هاي الرسالة اللي توصل لبريد المدير أو المشرف لما يسجّل دخول. كل الأسماء والأرقام وهمية للعرض فقط.</p>
+        </div>
+      </header>
+
+      <main class="grid">
+        <article class="card">
+          <a class="thumb" href="formal/"><img src="img/thumb-formal.jpg" alt="قالب 1 — إشعار أمني رسمي" /></a>
+          <div class="body">
+            <h2>قالب 1 — إشعار أمني رسمي</h2>
+            <p>رسمي مثل إشعارات البنوك: الشعار، الرمز، وسجل كامل بمن طلب الدخول ومتى ومن أي جهاز.</p>
+            <a class="btn" href="formal/">افتح القالب</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <a class="thumb" href="code-first/"><img src="img/thumb-code-first.jpg" alt="قالب 2 — الرمز أولاً" /></a>
+          <div class="body">
+            <h2>قالب 2 — الرمز أولاً</h2>
+            <p>الرمز كبير وواضح من أول نظرة، وبألوان سوفت. التفاصيل تحته.</p>
+            <a class="btn" href="code-first/">افتح القالب</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <a class="thumb" href="discreet/"><img src="img/thumb-discreet.jpg" alt="قالب 3 — رسالة متحفّظة" /></a>
+          <div class="body">
+            <h2>قالب 3 — رسالة متحفّظة</h2>
+            <p>بلا اسم سوفت ولا اسم الشركة ولا شعار. اللي يشوف البريد ما يعرف إنه نظام مالي.</p>
+            <a class="btn" href="discreet/">افتح القالب</a>
+          </div>
+        </article>
+      </main>
+
+      <p class="note">الأفضل تفتحها على الموبايل، لأن أغلب الناس يقرون الرمز من الموبايل.</p>
+      <p class="note"><a class="back" href="../">→ رجوع لأشكال نظام الويب</a></p>
+    </div>
+  </body>
+</html>
