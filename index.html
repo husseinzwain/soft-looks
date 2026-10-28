@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="robots" content="noindex, nofollow" />
-    <title>أشكال نظام الويب — للمراجعة</title>
+    <title>أشكال نظام الويب والجوال — للمراجعة</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" />
@@ -33,9 +33,13 @@
       .btn.secondary { background: #fff; color: var(--blue); }
       .btn:hover { background: var(--deep); border-color: var(--deep); color: #fff; }
       .note { margin: 22px 0 0; color: var(--muted); font-size: 14px; }
+      h2.section { font-size: 17px; margin: 4px 0 12px; }
+      .grid.two { grid-template-columns: repeat(2, 1fr); margin-bottom: 30px; }
+      .card.new { border-color: #9CC3FF; box-shadow: 0 14px 34px -20px rgba(10,108,255,.65); }
+      .tag.new { background: #0A6CFF; color: #fff; }
       @media (max-width: 900px) {
         .wrap { padding: 24px 16px 40px; }
-        .grid { grid-template-columns: 1fr; }
+        .grid, .grid.two { grid-template-columns: 1fr; }
         h1 { font-size: 22px; }
       }
     </style>
@@ -45,11 +49,41 @@
       <header>
         <div class="mark">سوفت</div>
         <div>
-          <h1>أشكال نظام الويب — للمراجعة</h1>
+          <h1>أشكال نظام الويب والجوال — للمراجعة</h1>
           <p>كل الأسماء والأرقام وهمية للعرض فقط، ولم يتغيّر شيء في النظام الحقيقي.</p>
         </div>
       </header>
 
+      <h2 class="section">الجديد — زجاجي على طريقة أبل</h2>
+      <section class="grid two">
+        <article class="card new">
+          <a class="thumb" href="look4/Home/"><img src="img/thumb-look4.jpg" alt="الشكل الرابع الزجاجي — الرئيسية فاتح وداكن" /></a>
+          <div class="body">
+            <div class="title"><h2>الشكل الرابع — الويب</h2><span class="tag new">زجاجي</span></div>
+            <p>نفس الأيقونات ومجموعاتها، بزجاج شفاف فوق خلفية ملوّنة. بيه فاتح وداكن من الزر اللي فوق.</p>
+            <div class="actions">
+              <a class="btn primary" href="look4/Home/">الرئيسية</a>
+              <a class="btn secondary" href="look4/Transfers/">الحوالات</a>
+              <a class="btn secondary" href="look4/Home/?tone=dark">داكن</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card new">
+          <a class="thumb" href="look4-mobile/Home/"><img src="img/thumb-look4-mobile.jpg" alt="الجوال الزجاجي — الرئيسية والملخص" /></a>
+          <div class="body">
+            <div class="title"><h2>الشكل الرابع — الجوال</h2><span class="tag new">زجاجي</span></div>
+            <p>تطبيق الجوال بنفس الزجاج، وشريط سفلي عائم مثل الآيفون. افتحه من الموبايل مباشرة.</p>
+            <div class="actions">
+              <a class="btn primary" href="look4-mobile/Home/">الرئيسية</a>
+              <a class="btn secondary" href="look4-mobile/Summary/">الملخص</a>
+              <a class="btn secondary" href="look4-mobile/Home/?tone=dark">داكن</a>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <h2 class="section">الأشكال السابقة</h2>
       <main class="grid">
         <article class="card">
           <a class="thumb" href="current/Home/"><img src="img/thumb-current.png" alt="الشكل الحالي — الرئيسية" /></a>
@@ -89,7 +123,7 @@
       </main>
 
       <p class="note"><a href="emails/" style="color:var(--blue);font-weight:800;text-decoration:none">قوالب رسالة رمز الدخول بالبريد ←</a></p>
-      <p class="note">الأفضل تفتحها على الكمبيوتر. على الموبايل اقلب الشاشة بالعرض، وتگدر تكبّر بإصبعين.</p>
+      <p class="note">أشكال الويب الأفضل تفتحها على الكمبيوتر (على الموبايل اقلب الشاشة بالعرض). شكل الجوال افتحه من الموبايل.</p>
     </div>
   </body>
 </html>
